@@ -17,18 +17,30 @@
     }
 %>
 <html>
-<head>
-    <title>Title</title>
-</head>
+<jsp:include page="partials/head.jsp">
+    <jsp:param name="title" value="Login Page"/>
+</jsp:include>
 <body>
-<h1>Login Page</h1>
-<form method="post" action="login.jsp">
-    <label for="username">Username</label>
-    <input id="username" type="text" name="username">
-    <br>
-    <label for="password">Password</label>
-    <input id="password" type="password" name="password">
-    <button>submit</button>
-</form>
+<jsp:include page="partials/navbar.jsp">
+    <jsp:param name="navBar" value="Login Page"/>
+</jsp:include>
+<div class="container text-center my-5">
+    <form method="post" action="login.jsp">
+        <div>
+        <label for="username">Username</label>
+        <input id="username" type="text" name="username">
+        </div>
+        <br>
+        <div>
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password">
+        </div>
+        <br>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-secondary" type="button">Submit</button>
+        </div>
+    </form>
+
+</div>
 </body>
 </html>
