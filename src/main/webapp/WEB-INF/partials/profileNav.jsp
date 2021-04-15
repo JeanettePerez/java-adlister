@@ -5,7 +5,7 @@
       <a class="navbar-brand" href="${pageContext.request.contextPath}/ads">Adlister</a>
     </div>
   </div>
-  <form method="POST" action="/logout">
+  <form method="POST" action="${pageContext.request.contextPath}/logout">
     <button type="submit">Logout</button>
   </form>
 </nav>
