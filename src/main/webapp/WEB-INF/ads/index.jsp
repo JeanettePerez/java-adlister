@@ -3,8 +3,9 @@
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
-        <jsp:param name="title" value="Viewing All The Dao.Ads" />
+        <jsp:param name="title" value="Viewing All The dao.Ads" />
     </jsp:include>
+  <title></title>
 </head>
 <body>
 <jsp:include page="/WEB-INF/partials/navbar.jsp" />
